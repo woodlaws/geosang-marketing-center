@@ -1,0 +1,2 @@
+document.querySelectorAll('details').forEach((item)=>item.addEventListener('toggle',()=>{if(item.open)item.querySelector('summary b').textContent='−';else item.querySelector('summary b').textContent='+'}));
+document.getElementById('consult-form').addEventListener('submit',(event)=>{event.preventDefault();event.currentTarget.reset();document.getElementById('form-result').textContent='신청이 완료되었습니다. 입력해주신 내용을 확인한 뒤 연락드리겠습니다.';});
